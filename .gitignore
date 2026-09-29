@@ -1,0 +1,32 @@
+# ---------- Backend (Java / Maven) ----------
+backend/target/
+*.class
+*.jar
+*.war
+*.log
+hs_err_pid*
+
+# ---------- Frontend (React / Vite) ----------
+frontend/node_modules/
+frontend/dist/
+npm-debug.log*
+
+# ---------- Environment files (may contain passwords) ----------
+# keep .env.example, ignore the real .env
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# ---------- IDE files ----------
+.idea/
+*.iml
+.vscode/
+.classpath
+.project
+.settings/
+.factorypath
+
+# ---------- OS files ----------
+.DS_Store
+Thumbs.db

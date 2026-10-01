@@ -1,0 +1,20 @@
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# Maven
+target/
+.mvn/timing.properties
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log

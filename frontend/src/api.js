@@ -1,6 +1,6 @@
 // Base url of the backend.
 // In development it is empty because vite proxy handles /api calls.
-const BASE_URL = import.meta.env.VITE_API_URL || '';
+const API_URL = import.meta.env.VITE_API_URL || '';
 
 // Converts an object to query string.
 // Example: { base: 1, from: '' } -> "?base=1"   (empty values are skipped)
@@ -26,7 +26,7 @@ export async function apiCall(path, options = {}) {
     headers['Authorization'] = 'Bearer ' + token;
   }
 
-  const response = await fetch(BASE_URL + path, {
+  const response = await fetch(API_URL + path, {
     ...options,
     headers: headers,
     body: options.body ? JSON.stringify(options.body) : undefined,
